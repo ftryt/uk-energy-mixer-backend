@@ -5,10 +5,9 @@ import com.example.energymix.dto.responce.OptimalChargingTimeResponse;
 import com.example.energymix.service.EnergyService;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
-
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*")
 public class EnergyController {
 
     private final EnergyService energyService;
